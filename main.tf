@@ -1,8 +1,3 @@
-resource "tfe_organization" "test" {
-  name  = "nikolay-paid"
-  email = "nikolay@hashicorp.com"
-}
-
 resource "tfe_workspace" "test" {
   name         = "create-notification-configuration-from-another-workspace"
   organization = tfe_organization.test.id
