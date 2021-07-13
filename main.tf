@@ -4,7 +4,7 @@ resource "tfe_organization" "test" {
 }
 
 resource "tfe_workspace" "test" {
-  name         = "my-workspace-name"
+  name         = "create-notification-configuration-from-another-workspace"
   organization = tfe_organization.test.id
 }
 
