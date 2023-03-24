@@ -9,6 +9,6 @@ resource "tfe_notification_configuration" "test" {
   enabled          = true
   destination_type = "email"
   triggers         = ["run:created", "run:planning", "run:errored"]
-  email_addresses  = ["nikolay@hashicorp.com", "nikcbg@yahoo.com"]
+  email_addresses  = ["test@exmple.com", "test1@example.com"]
   workspace_id     = tfe_workspace.test.id
 }
